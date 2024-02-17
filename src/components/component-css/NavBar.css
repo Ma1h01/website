@@ -1,0 +1,19 @@
+.transparent-nav-bar{
+    background-color: transparent;
+    display: flex;
+}
+
+.transparent-nav-bar .navbar-brand,
+.transparent-nav-bar .nav-link {
+  color: white;
+}
+
+.transparent-nav-bar .nav-link:hover,
+.transparent-nav-bar .navbar-brand:hover{
+  color: yellow;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+

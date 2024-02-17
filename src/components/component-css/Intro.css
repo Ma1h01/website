@@ -1,0 +1,13 @@
+.intro-text {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+h1 {
+    color: white !important;
+}
+
+hr {
+    border: 1px solid white !important;
+}
