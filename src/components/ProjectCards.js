@@ -30,7 +30,8 @@ const ProjectCards = () => {
 
         <Col>
             <Card>
-                <Card.Img variant="top" src="https://via.placeholder.com/150" />
+                <Card.Img variant="top" src="./images/CS-Quiz-Home.jpeg" />
+                <Card.Img variant="top" src="./images/CS-Quiz.jpeg" />
                 <Card.Body>
                     <Card.Title>CS Quiz Generator</Card.Title>
                     <Card.Text>
@@ -46,7 +47,8 @@ const ProjectCards = () => {
 
         <Col>
             <Card>
-                <Card.Img variant="top" src="https://via.placeholder.com/150" />
+                <Card.Img variant="top" src="./images/Dungeon-Game-Home.jpeg" />
+                <Card.Img variant="top" src="./images/Dungeon-Game-Play.jpeg" />
                 <Card.Body>
                     <Card.Title>2D Dungeon Game</Card.Title>
                     <Card.Text>
@@ -64,7 +66,7 @@ const ProjectCards = () => {
     <Row>
         <Col>
             <Card>
-                <Card.Img variant="top" src="https://via.placeholder.com/150" />
+                <Card.Img variant="top" src="./images/LC-2200.jpeg" />
                 <Card.Body>
                     <Card.Title>LC-2200 Datapath</Card.Title>
                     <Card.Text>

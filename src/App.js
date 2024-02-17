@@ -10,6 +10,10 @@ function App() {
       <ImageSlide/>
       <Intro/>
       <ProjectCards/>
+      <footer>
+        <p>Made by Yihao Mai</p>
+        <p>Copyright 2024 | All Rights Reserved</p>
+      </footer>
     </div>
     
   )
