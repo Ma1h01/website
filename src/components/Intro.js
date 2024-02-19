@@ -1,7 +1,7 @@
 import React from 'react'
 import './component-css/Intro.css';
 import { Container } from 'react-bootstrap';
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { OverlayTrigger } from 'react-bootstrap';
 import Figure from 'react-bootstrap/Figure';
 import Button from 'react-bootstrap/Button';
 
