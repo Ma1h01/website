@@ -6,7 +6,7 @@ import './component-css/ImageSlide.css';
 
 function ImageSlide() {
   return (
-    <Carousel touch id='home' interval={5000} pause='false'>
+    <Carousel touch id='home' interval={5000} pause='false' fade>
 
       <Carousel.Item className='carousel-item'>
         <Image src='./images/6.jpeg' alt='Not Found' className='img'/>

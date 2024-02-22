@@ -26,7 +26,7 @@ const Intro = () => {
   }
   return (
     <Container className='my-3' id='aboutme'>
-        <h1><b>About Me</b></h1>
+        <h1 className='intro-text'>About Me</h1>
         <hr/>
         <p className='intro-text'>My name is Yihao Mai. I am a third-year CS student at <i>Georgia Institue of Technology</i>,
         currently looking for a 2024 summer internship in software development, preferably in full-stack web dev. 

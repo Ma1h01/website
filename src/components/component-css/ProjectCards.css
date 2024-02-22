@@ -1,5 +1,6 @@
 .card {
     width: 25rem;
+    border: 1.5px solid black;
 }
 
 .card-text {

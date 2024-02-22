@@ -9,7 +9,7 @@ import { Container } from 'react-bootstrap';
 const ProjectCards = () => {
   return (
     <Container id='project'>
-    <h1><b>Projects & Experiences</b></h1>
+    <h1>Projects & Experiences</h1>
     <hr/>
     <Row className="justify-content-md-center my-4">
         <Col>

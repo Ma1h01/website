@@ -1,13 +1,8 @@
 .intro-text {
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2rem;
+    color: black;
 }
 
 h1 {
-    color: white !important;
+    font-family: 'Playfair Display';
 }
 
-hr {
-    border: 1px solid white !important;
-}
