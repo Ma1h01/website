@@ -14,31 +14,14 @@ const ProjectCards = () => {
     <Row className="justify-content-md-center my-4">
         <Col>
             <Card>
-                <Card.Img variant="top" src="https://via.placeholder.com/150" />
+                <Card.Img variant="top" src="./images/Swift-Label-Matcher-1.jpeg" />
+                <Card.Img variant="top" src="./images/Swift-Label-Matcher-2.jpeg" />
                 <Card.Body>
                     <Card.Title>Swift Label Matcher</Card.Title>
                     <Card.Text>
-                        A Python script that uses PyMuPDF and CUPS libraries to automatically print labels for e-commerce retailers to
-                        achieve a package processing automation.
+                        A Python desktop app that uses PyMuPDF and CUPS libraries to allow e-commerce retailers to automatically match and print shipping labels using only the product IDs.
                     </Card.Text>
                     <a href="https://github.com/Ma1h01/Swift-Label-Matcher" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} size="2x" color='black'/>
-                    </a>
-                 </Card.Body>   
-            </Card>
-        </Col>
-
-        <Col>
-            <Card>
-                <Card.Img variant="top" src="./images/CS-Quiz-Home.jpeg" />
-                <Card.Img variant="top" src="./images/CS-Quiz.jpeg" />
-                <Card.Body>
-                    <Card.Title>CS Quiz Generator</Card.Title>
-                    <Card.Text>
-                        A full-stack web app that allows users to practice multiple-choice questions and receive instant feedback as well as
-                        modfiy the question bank. Built with React, Spring Boot, and MySQL.
-                    </Card.Text>
-                    <a href="https://github.com/Ma1h01/quiz-app-back" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} size="2x" color='black'/>
                     </a>
                  </Card.Body>   
@@ -56,6 +39,23 @@ const ProjectCards = () => {
                         collision detection, and combat system. Built with Java in Android Studio. 
                     </Card.Text>
                     <a href="https://github.com/Ma1h01/CS2340C_Team29" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} size="2x" color='black'/>
+                    </a>
+                 </Card.Body>   
+            </Card>
+        </Col>
+
+        <Col>
+            <Card>
+                <Card.Img variant="top" src="./images/CS-Quiz-Home.jpeg" />
+                <Card.Img variant="top" src="./images/CS-Quiz.jpeg" />
+                <Card.Body>
+                    <Card.Title>CS Quiz Generator</Card.Title>
+                    <Card.Text>
+                        A full-stack web app that allows users to practice multiple-choice questions and receive instant feedback as well as
+                        modfiy the question bank. Built with React, Spring Boot, and MySQL.
+                    </Card.Text>
+                    <a href="https://github.com/Ma1h01/quiz-app-back" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} size="2x" color='black'/>
                     </a>
                  </Card.Body>   
