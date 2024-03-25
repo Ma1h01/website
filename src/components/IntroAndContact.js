@@ -8,10 +8,11 @@ const IntroAndContact = () => {
     const iconStyle = {
         marginRight: '10px',
     }
+
   return (
     <div>
         <h1>Hi, I'm Yihao</h1>
-        <h3>CS @ Georgia Tech / Full-Stack Developer / Travel Enthusiast</h3>
+        <h3 style={{fontFamily: 'Playfair Display'}}>CS @ Georgia Tech / Full-Stack Developer / Travel Enthusiast</h3>
         <a href="https://github.com/Ma1h01" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" color='white' style={iconStyle}/>
         </a>

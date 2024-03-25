@@ -28,20 +28,19 @@ const Intro = () => {
     <Container className='my-3' id='aboutme'>
         <h1 className='intro-text'>About Me</h1>
         <hr/>
-        <p className='intro-text'>My name is Yihao Mai. I am a third-year CS student at <i>Georgia Institue of Technology</i>,
+        <p className='intro-text'>My name is Yihao Mai. I am a third-year Computer Science student at <i>Georgia Institue of Technology</i>,
         currently looking for a 2024 summer internship in software development, preferably in full-stack web dev. 
         </p>
 
         <p className='intro-text'>
-          I'm passionate about
-          learning data management and analysis using cutting-edge AI technology such as Machine Learning and Deep Learning.
-          I'm also planning to pursue a master's degree in CS, specializing in Interactive Intelligence.
+          My primary interests lie in <b>full-stack web development</b> and <b>generative AI</b>. 
+          I'm planning to pursue a master's degree in CS, specializing in Interactive Intelligence.
         </p>
 
         <p className='intro-text'>
-            Outside of school, I have actively been working with an e-commerce retailer to help automate his package processing
-            by developing a Python script. We are currently close to finishing all the logic and will soon start testing and
-            designing the UI.
+            I'm always excited about and actively looking for opportunities to develop software to solve real-world problems. For exmaple,
+            I have been working with e-commerce retailers to help automate their package processing
+            by developing a Python desktop application.
         </p>
 
         <p className='intro-text'>
