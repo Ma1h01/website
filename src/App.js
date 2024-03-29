@@ -11,7 +11,7 @@ function App() {
       <Intro/>
       <ProjectCards/>
       <footer>
-        <p>Made by Yihao Mai</p>
+        <p>Built with React by Yihao</p>
         <p>Copyright 2024 | All Rights Reserved</p>
       </footer>
     </div>

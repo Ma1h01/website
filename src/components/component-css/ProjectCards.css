@@ -1,6 +1,6 @@
 .card {
     width: 25rem;
-    border: 1.5px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
@@ -10,6 +10,7 @@
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.5s ease-out;
+    box-shadow: none;
 }
 
 .card a {
