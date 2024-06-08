@@ -30,7 +30,7 @@ const ProjectCards = () => {
               players. Built with MERN stack.
             </Card.Text>
             <a
-              href="https://github.com/GTWebDevOrg/Punchshot-Pickleball"
+              href="https://github.com/Ma1h01/Punchshot-Pickleball"
               target="_blank"
               rel="noopener noreferrer"
             >
