@@ -28,31 +28,28 @@ const Intro = () => {
     <Container className='my-3' id='aboutme'>
         <h1 className='intro-text'>About Me</h1>
         <hr/>
-        <p className='intro-text'>My name is Yihao Mai. I am a third-year Computer Science student at <i>Georgia Institue of Technology</i>,
-        currently looking for a 2024 summer internship in software development, preferably in full-stack web dev. 
+        <p className='intro-text'>My name is Yihao Mai. I am a fourth-year Computer Science undergrad at <i>Georgia Institute of Technology</i>,
+        currently looking for a 2025 summer internship or entry-level software engineer position.
         </p>
 
         <p className='intro-text'>
-          My primary interests lie in <b>full-stack web development</b> and <b>generative AI</b>. 
-          I'm planning to pursue a master's degree in CS, specializing in Interactive Intelligence.
+          My primary interests lie in <b>full-stack development</b>, <b>database management</b> and <b>generative AI</b>. I aspire to use my expertise in these areas to
+          tackle database challenges such as scalability and query optimization, and to make database more accessible to non-technical users, as well as to develop SasS applications.
         </p>
 
         <p className='intro-text'>
-            I'm always excited about and actively looking for opportunities to develop software to solve real-world problems. For exmaple,
-            I have been working with e-commerce retailers to help automate their package processing
-            by developing a Python desktop application.
+            Through my internship and project experiences, I have honed my full-stack dev skills and have become proficient in Java, Python, JavaScript, MERN stack, Next.js, Spring, and SQL/No SQL databases.
+            I also have DevOps experience with GitHub, Docker, Kubernetes, and CI/CD pipelines.
         </p>
 
         <p className='intro-text'>
-            During this collaboration, I learned a lot about the e-commerce field, and it gave me an idea
-            for my next major project: a full-stack web app that can help small e-commerce retailers manage their inventory and orders.
+            I'm a active backend developer at uniBuzzy, a student startup at Georgia Tech, where I am responsible for developing and maintaining the backend of the app, as well as the database.
+            I'm always excited to develop software in collaboration. Feel free to reach out to me if you have any project ideas or opportunities.
         </p>
 
-
         <p className='intro-text'>
-            Other than school and work, I also enjoy traveling, especially with my friends. I have been to 4 countries and have a goal to visit at least
-            one unexplored place every year. However, my major goals are sky diving and deep sea diving at least once in my life. Without 
-            doing these two things, I don't think I can say I have lived my life to the fullest.
+            Other than school and work, I also enjoy traveling. I have been to 4 countries and have a goal to visit at least
+            one unexplored place every year. However, my top two goals are sky diving and deep sea diving.
         </p>
 
         <p className='intro-text'>

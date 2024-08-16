@@ -7,20 +7,20 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./component-css/ProjectCards.css";
 import { Container } from "react-bootstrap";
 const ProjectCards = () => {
-    const cardContainer = {
-        display:"flex",
-        flexDirection:"row",
-        justifyContent:"center",
-        marginTop:"30px",
-        gap:"30px",
-        alignItems:"flex-start",
-    }
+  const cardContainer = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: "30px",
+    gap: "30px",
+    alignItems: "flex-start",
+  };
   return (
     <Container id="project">
       <h1>Projects & Experiences</h1>
       <hr />
       <div style={cardContainer}>
-        <Card >
+        <Card>
           <Card.Img variant="top" src="./images/Punchshot-Pickleball.jpeg" />
           <Card.Body>
             <Card.Title>Punchshot Pickleball</Card.Title>
@@ -31,6 +31,28 @@ const ProjectCards = () => {
             </Card.Text>
             <a
               href="https://github.com/Ma1h01/Punchshot-Pickleball"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
+            </a>
+          </Card.Body>
+        </Card>
+
+        <Card>
+          <Card.Img variant="top" src="./images/SuperAidJ4u.jpeg" />
+          <Card.Body>
+            <Card.Title>
+              Online Order and Inventory Management System
+            </Card.Title>
+            <Card.Text>
+              A full-stack web application developed with Next.js and Prisma,
+              designed to enable e-commerce vendors to manage inventory and
+              orders across their stores hosted on third-party platforms (such
+              as Amazon, eBay, TikTok) from a single, centralized dashboard.
+            </Card.Text>
+            <a
+              href="https://github.com/Ma1h01/SuperAidj4u"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +80,15 @@ const ProjectCards = () => {
             </a>
           </Card.Body>
         </Card>
+      </div>
 
+      <div
+        style={{
+          ...cardContainer,
+          justifyContent: "flex-end",
+          paddingRight: "18px",
+        }}
+      >
         <Card>
           <Card.Img variant="top" src="./images/Dungeon-Game-Home.jpeg" />
           <Card.Img variant="top" src="./images/Dungeon-Game-Play.jpeg" />
@@ -71,28 +101,6 @@ const ProjectCards = () => {
             </Card.Text>
             <a
               href="https://github.com/Ma1h01/CS2340C_Team29"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div style={{...cardContainer, justifyContent: "flex-end", paddingRight: "18px"}}>
-        <Card>
-          <Card.Img variant="top" src="./images/LC-2200-With-Interrupt.jpeg" />
-          <Card.Body>
-            <Card.Title>LC-2200 Datapath</Card.Title>
-            <Card.Text>
-              A 32-bit RISC processor with a 5-stage pipeline, featuring a
-              complete datapath and control unit, and is able to perform basic
-              computation and data storage, and loop execution. Built in
-              CircuitSim and tested with assembly code.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/LC-2200-With-Interrupt"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -113,6 +121,26 @@ const ProjectCards = () => {
             </Card.Text>
             <a
               href="https://github.com/Ma1h01/quiz-app-back"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
+            </a>
+          </Card.Body>
+        </Card>
+
+        <Card>
+          <Card.Img variant="top" src="./images/LC-2200-With-Interrupt.jpeg" />
+          <Card.Body>
+            <Card.Title>LC-2200 Datapath</Card.Title>
+            <Card.Text>
+              A 32-bit RISC processor with a 5-stage pipeline, featuring a
+              complete datapath and control unit, and is able to perform basic
+              computation and data storage, and loop execution. Built in
+              CircuitSim and tested with assembly code.
+            </Card.Text>
+            <a
+              href="https://github.com/Ma1h01/LC-2200-With-Interrupt"
               target="_blank"
               rel="noopener noreferrer"
             >
