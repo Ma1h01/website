@@ -1,21 +1,33 @@
-.transparent-nav-bar{
-    background-color: transparent;
-    height: 60px;
+/* NavBar.css */
+.styled-nav-bar {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e0e0e0;
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
 }
 
-.transparent-nav-bar .navbar-brand,
-.transparent-nav-bar .nav-link {
-  color: black;
+.styled-nav-bar.hidden {
+  transform: translateY(-100%);
 }
 
-.transparent-nav-bar .navbar-brand {
+.styled-nav-bar .navbar-brand,
+.styled-nav-bar .nav-link {
+  color: #333;
+}
+
+.styled-nav-bar .navbar-brand {
   font-family: 'Playfair Display';
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.transparent-nav-bar .nav-link {
-  font-weight: 400;
+.styled-nav-bar .nav-link {
+  font-weight: 500;
+  margin-left: 2rem;
+  transition: color 0.2s ease;
 }
 
-
-
+.styled-nav-bar .nav-link:hover {
+  color: #007bff;
+}
