@@ -3,6 +3,12 @@
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Force the card image container to have a consistent height */
+.card-img-top {
+    width: 100%;
+    height: auto; /* Let the image determine its height */
+}
+
 .card-text {
     color: black;
 }

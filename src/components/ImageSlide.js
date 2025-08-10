@@ -4,14 +4,14 @@ import Image from 'react-bootstrap/Image';
 import IntroAndContact from './IntroAndContact';
 import './component-css/ImageSlide.css';
 
-const images = [
+export const images = [
   {
-    src: "./images/views-and-people/sidomulyo.jpeg",
-    caption: "Sidomulyo, East Java, Indonesia(2024)",
+    src: "./images/views-and-people/bromo.jpg",
+    caption: "Bromo Tengger Semeru National Park, East Java, Indonesia(2024)",
   },
   {
-    src: "./images/views-and-people/bromo.jpeg",
-    caption: "Bromo Tengger Semeru National Park, East Java, Indonesia(2024)",
+    src: "./images/views-and-people/sidomulyo.jpg",
+    caption: "Sidomulyo, East Java, Indonesia(2024)",
   },
   {
     src: "./images/views-and-people/bali_0.jpeg",
@@ -42,6 +42,7 @@ const images = [
     caption: "Chongqing, China(2023)",
   },
 ];
+
 function ImageSlide() {
   return (
     <Carousel touch id='home' interval={5000} pause='false' fade>
@@ -49,7 +50,7 @@ function ImageSlide() {
         images.map((image, index) => {
           return (
             <Carousel.Item key={index} className='carousel-item'>
-              <Image src={image.src} alt='Not Found' className='img'/>
+              <Image src={image.src} alt='Not Found' className='img' rel='preload'/>
               <Carousel.Caption className='caption'>
                   <IntroAndContact/>
               </Carousel.Caption>

@@ -1,153 +1,124 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import "./component-css/ProjectCards.css";
-import { Container } from "react-bootstrap";
+
+// Maximum length for card description display
+const MAX_DESC_LENGTH = 200;
+
+// Helper to truncate the description and add ellipsis if needed.
+const truncateDescription = (desc) => {
+  if (desc.length <= MAX_DESC_LENGTH) return desc;
+  return desc.substring(0, MAX_DESC_LENGTH) + "...";
+};
+
+// Data for all cards
+const cardData = [
+  {
+    title: "Punchshot Pickleball",
+    description:
+      "A full-stack web app that allows pickleball players to find pickup games, tournaments, courts near them, and connect with other players. Built with MERN stack.",
+    image: "./images/Punchshot-Pickleball.jpeg",
+    repoLink: "https://github.com/Ma1h01/Punchshot-Pickleball",
+    hasRepoLink: true,
+  },
+  {
+    title: "Online Order and Inventory Management System",
+    description:
+      "A full-stack web application developed with Next.js and Prisma, designed to enable e-commerce vendors to manage inventory and orders across their stores hosted on third-party platforms (such as Amazon, eBay, TikTok) from a single, centralized dashboard.",
+    image: "./images/SuperAidJ4u.jpeg",
+    repoLink: "https://github.com/Ma1h01/SuperAidj4u",
+    hasRepoLink: true,
+  },
+  {
+    title: "Swift Label Matcher",
+    description:
+      "A Python desktop app that uses PyMuPDF and CUPS libraries to allow e-commerce retailers to automatically match and print shipping labels using only the product IDs.",
+    image: "./images/Swift-Label-Matcher-1.jpeg",
+    repoLink: "https://github.com/Ma1h01/Swift-Label-Matcher",
+    hasRepoLink: true,
+  },
+  {
+    title: "2D Dungeon Game",
+    description:
+      "A 2D Android dungeon game engages players to explore and fight in a procedurally generated map, featuring AI enemies, collision detection, and a combat system. Built with Java in Android Studio.",
+    images: [
+      "./images/Dungeon-Game-Home.jpeg",
+      "./images/Dungeon-Game-Play.jpeg",
+    ],
+    repoLink: "https://github.com/Ma1h01/CS2340C_Team29",
+    hasRepoLink: true,
+  },
+  {
+    title: "CS Quiz Generator",
+    description:
+      "A full-stack web app that allows users to practice multiple-choice questions and receive instant feedback as well as modify the question bank. Built with React, Spring Boot, and MySQL.",
+    images: ["./images/CS-Quiz-Home.jpeg", "./images/CS-Quiz.jpeg"],
+    repoLink: "https://github.com/Ma1h01/quiz-app-back",
+    hasRepoLink: true,
+  },
+  {
+    title: "LC-2200 Datapath",
+    description:
+      "A 32-bit RISC processor with a 5-stage pipeline, featuring a complete datapath and control unit, and is able to perform basic computation, data storage, and loop execution. Built in CircuitSim and tested with assembly code.",
+    image: "./images/LC-2200-With-Interrupt.jpeg",
+    repoLink: "https://github.com/Ma1h01/LC-2200-With-Interrupt",
+    hasRepoLink: true,
+  },
+];
+
 const ProjectCards = () => {
-  const cardContainer = {
+  const cardContainerStyle = {
     display: "flex",
-    flexDirection: "row",
+    flexWrap: "wrap",
     justifyContent: "center",
-    marginTop: "30px",
     gap: "30px",
+    marginTop: "30px",
     alignItems: "flex-start",
   };
+
   return (
     <Container id="project">
       <h1>Projects & Experiences</h1>
       <hr />
-      <div style={cardContainer}>
-        <Card>
-          <Card.Img variant="top" src="./images/Punchshot-Pickleball.jpeg" />
-          <Card.Body>
-            <Card.Title>Punchshot Pickleball</Card.Title>
-            <Card.Text>
-              A full-stack web app that allows pickleball players to find pickup
-              games, tournaments, courts near them, and connect with other
-              players. Built with MERN stack.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/Punchshot-Pickleball"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
-
-        <Card>
-          <Card.Img variant="top" src="./images/SuperAidJ4u.jpeg" />
-          <Card.Body>
-            <Card.Title>
-              Online Order and Inventory Management System
-            </Card.Title>
-            <Card.Text>
-              A full-stack web application developed with Next.js and Prisma,
-              designed to enable e-commerce vendors to manage inventory and
-              orders across their stores hosted on third-party platforms (such
-              as Amazon, eBay, TikTok) from a single, centralized dashboard.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/SuperAidj4u"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
-
-        <Card>
-          <Card.Img variant="top" src="./images/Swift-Label-Matcher-1.jpeg" />
-          {/* <Card.Img variant="top" src="./images/Swift-Label-Matcher-2.jpeg" /> */}
-          <Card.Body>
-            <Card.Title>Swift Label Matcher</Card.Title>
-            <Card.Text>
-              A Python desktop app that uses PyMuPDF and CUPS libraries to allow
-              e-commerce retailers to automatically match and print shipping
-              labels using only the product IDs.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/Swift-Label-Matcher"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div
-        style={{
-          ...cardContainer,
-          justifyContent: "flex-end",
-          paddingRight: "18px",
-        }}
-      >
-        <Card>
-          <Card.Img variant="top" src="./images/Dungeon-Game-Home.jpeg" />
-          <Card.Img variant="top" src="./images/Dungeon-Game-Play.jpeg" />
-          <Card.Body>
-            <Card.Title>2D Dungeon Game</Card.Title>
-            <Card.Text>
-              A 2D Android dungen game eagages players to explore and fight in a
-              procedurally generated map, featuring AI enemies, collision
-              detection, and combat system. Built with Java in Android Studio.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/CS2340C_Team29"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
-
-        <Card>
-          <Card.Img variant="top" src="./images/CS-Quiz-Home.jpeg" />
-          <Card.Img variant="top" src="./images/CS-Quiz.jpeg" />
-          <Card.Body>
-            <Card.Title>CS Quiz Generator</Card.Title>
-            <Card.Text>
-              A full-stack web app that allows users to practice multiple-choice
-              questions and receive instant feedback as well as modfiy the
-              question bank. Built with React, Spring Boot, and MySQL.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/quiz-app-back"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
-
-        <Card>
-          <Card.Img variant="top" src="./images/LC-2200-With-Interrupt.jpeg" />
-          <Card.Body>
-            <Card.Title>LC-2200 Datapath</Card.Title>
-            <Card.Text>
-              A 32-bit RISC processor with a 5-stage pipeline, featuring a
-              complete datapath and control unit, and is able to perform basic
-              computation and data storage, and loop execution. Built in
-              CircuitSim and tested with assembly code.
-            </Card.Text>
-            <a
-              href="https://github.com/Ma1h01/LC-2200-With-Interrupt"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
-            </a>
-          </Card.Body>
-        </Card>
+      <div style={cardContainerStyle}>
+        {cardData.map((card, index) => (
+          <Card key={index}>
+            {card.images ? (
+              card.images.map((img, idx) => (
+                <Card.Img key={idx} variant="top" src={img} />
+              ))
+            ) : (
+              <Card.Img variant="top" src={card.image} />
+            )}
+            <Card.Body>
+              <Card.Title>{card.title}</Card.Title>
+              <OverlayTrigger
+                placement="top"
+                overlay={
+                  <Tooltip id={`tooltip-${index}`}>{card.description}</Tooltip>
+                }
+              >
+                <Card.Text className="card-text">
+                  {truncateDescription(card.description)}
+                </Card.Text>
+              </OverlayTrigger>
+              {card.hasRepoLink && (
+                <a
+                  href={card.repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
+                </a>
+              )}
+            </Card.Body>
+          </Card>
+        ))}
       </div>
     </Container>
   );

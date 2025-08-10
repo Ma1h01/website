@@ -26,9 +26,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
-  "homepage": "https://ma1h01.github.io/website",
-
   "eslintConfig": {
     "extends": [
       "react-app",
