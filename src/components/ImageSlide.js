@@ -6,7 +6,7 @@ import './component-css/ImageSlide.css';
 
 export const images = [
   {
-    src: "./images/views-and-people/bromo.jpg",
+    src: "./images/views-and-people/bromo.JPG",
     caption: "Bromo Tengger Semeru National Park, East Java, Indonesia(2024)",
   },
   {
