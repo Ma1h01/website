@@ -19,6 +19,14 @@ const truncateDescription = (desc) => {
 // Data for all cards
 const cardData = [
   {
+    title: "BuzzLink",
+    description:
+      "A RAG chatbot that helps Georgia Tech students connect with alumni at any specific industry or company in conversational style rather than traditional rigid search. Built with Python, LangChain, OpenAI models, Qdrant vector DB, and nomic embeddings. Collected the first-ever dataset of Georgia Tech alumni LinkedIn profiles for this project through web scrapping.",
+    image: "./images/BuzzLink.png",
+    repoLink: "https://github.com/Ma1h01/buzzlink",
+    hasRepoLink: true,
+  },
+  {
     title: "Punchshot Pickleball",
     description:
       "A full-stack web app that allows pickleball players to find pickup games, tournaments, courts near them, and connect with other players. Built with MERN stack.",
@@ -51,14 +59,6 @@ const cardData = [
       "./images/Dungeon-Game-Play.jpeg",
     ],
     repoLink: "https://github.com/Ma1h01/CS2340C_Team29",
-    hasRepoLink: true,
-  },
-  {
-    title: "CS Quiz Generator",
-    description:
-      "A full-stack web app that allows users to practice multiple-choice questions and receive instant feedback as well as modify the question bank. Built with React, Spring Boot, and MySQL.",
-    images: ["./images/CS-Quiz-Home.jpeg", "./images/CS-Quiz.jpeg"],
-    repoLink: "https://github.com/Ma1h01/quiz-app-back",
     hasRepoLink: true,
   },
   {
