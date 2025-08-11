@@ -36,8 +36,12 @@ const Intro = () => {
           <div className="intro-section education">
             <h2>Education</h2>
             <ul>
-              <li>BSCS from Georgia Tech in May 2025</li>
-              <li>MSCS from Georgia Tech (Expected graduation: May 2026)</li>
+              <li>Georgia Institute of Technology
+                <ul>
+                  <li>BSCS, May 2025</li>
+                  <li>MSCS, May 2026 (expected)</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </Col>
