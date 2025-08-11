@@ -7,10 +7,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import "./component-css/ProjectCards.css";
 
-// Maximum length for card description display
 const MAX_DESC_LENGTH = 200;
-
-// Helper to truncate the description and add ellipsis if needed.
 const truncateDescription = (desc) => {
   if (desc.length <= MAX_DESC_LENGTH) return desc;
   return desc.substring(0, MAX_DESC_LENGTH) + "...";
@@ -21,7 +18,7 @@ const cardData = [
   {
     title: "BuzzLink",
     description:
-      "A RAG chatbot that helps Georgia Tech students connect with alumni at any specific industry or company in conversational style rather than traditional rigid search. Built with Python, LangChain, OpenAI models, Qdrant vector DB, and nomic embeddings. Collected the first-ever dataset of Georgia Tech alumni LinkedIn profiles for this project through web scrapping.",
+      "A RAG chatbot that helps Georgia Tech students connect with alumni at any specific industry or company in conversational style rather than traditional rigid search. Built with Python, TypeScript, LangChain, OpenAI models, Qdrant vector DB, and nomic embeddings. Collected the first-ever dataset of Georgia Tech alumni LinkedIn profiles for this project through web scrapping.",
     image: "./images/BuzzLink.png",
     repoLink: "https://github.com/Ma1h01/buzzlink",
     hasRepoLink: true,
