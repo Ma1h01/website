@@ -60,7 +60,7 @@ const Intro = () => {
             <h2>Current Exp</h2>
             <ul>
               <li>SDE Intern at Tyler Technologies: Using Angular and C# to enhance products for ADA compliance and migrate from AngularJS to Angular</li>
-              <li>Undergraduate Research Assistant at Georgia Tech’s D2I lab: Collaborating with researchers across five universities and building an automated pipeline for managing OpenAlex data in PostgresDB, which powers the CollabNext project</li>
+              <li>Research Assistant at Georgia Tech’s D2I lab: Collaborating with researchers across five universities and building an automated pipeline for managing OpenAlex data in PostgresDB, which powers the CollabNext project</li>
               <li>
                 <a href="./docs/resume.pdf" target="_blank" rel="noopener noreferrer">
                   View more in my resume
